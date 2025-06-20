@@ -1,0 +1,19 @@
+h1{
+    color: rgb(46, 50, 161);
+    text-align: center;
+    font-size: 36px;
+}
+h2{
+   color: red;
+   text-align: center;
+   font-size: 18px; 
+}
+.img1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100px;
+}
+footer{
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>會員系統首頁</h1>
+    {% if request.user.is_authenticated and request.user.is_active %}
+        歡迎光臨:{{ request.user.username }}
+        <p><a href="/logout/">logout!!!</a></p>
+    {% else %}
+        <p>not login!!!</p>
+        <p><a href="/login/">login!!!</a></p>
+    {% endif %}
+    <span style = "color: red;">{{message}}</span>
+</body>
+</html>
